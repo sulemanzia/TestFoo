@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="IlluminatedCloudSettings">
+    <option name="connections">
+      <list>
+        <IlluminatedCloudConnection>
+          <option name="buildSuccessDatesBySourceRootRelativePath">
+            <map>
+              <entry key="CLASSES/FOO.CLS" value="1481769999660" />
+            </map>
+          </option>
+          <option name="defaultModuleName" value="TestSales" />
+          <option name="name" value="TestSales" />
+          <option name="offlineSymbolTableGenerationDate" value="1481769075148" />
+          <option name="offlineSymbolTablePath" value="$PROJECT_DIR$/IlluminatedCloud/TestSales/OfflineSymbolTable.zip" />
+          <option name="organizationType" value="DEVELOPMENT" />
+          <option name="password" value="dfe7dfc3dfd9dfc8dfcbdfc2df9bdf98df99" />
+          <option name="securityToken" value="dfc8dfd2dfd0dfcedfd8dffadff8dfe5dfdbdf99dfcfdfeedfc9dfe5dfc2dffcdfd9dffedf9ddffbdf9bdf9cdff2dfe4dfed" />
+          <option name="username" value="mkhan@az.com" />
+        </IlluminatedCloudConnection>
+      </list>
+    </option>
+    <option name="selectedConnectionIndex" value="0" />
+  </component>
+</project>
