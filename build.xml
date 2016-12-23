@@ -13,7 +13,7 @@
 
     <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
         <classpath>
-            <pathelement location="../ant-salesforce.jar" />        	
+            <pathelement location="lib/ant-salesforce.jar" />        	
         </classpath>
     </taskdef>
 	
@@ -57,14 +57,14 @@
     <!-- Shows deploying code & running tests for code in directory -->
     <target name="deployCode">
       <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
-      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="/Users/darkdog/Development/test_foo/TestFoo/src" testLevel="RunSpecifiedTests" rollbackOnError="true">
+      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" testLevel="RunSpecifiedTests" rollbackOnError="true">
       	 <runTest>SampleDeployClass</runTest> 
       </sf:deploy>
     </target>
 	
 	 <!-- Shows deploying code with no TestLevel sepcified -->
     <target name="deployCodeNoTestLevelSpecified">
-      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="/Users/darkdog/Development/test_foo/TestFoo/src" rollbackOnError="true"/>
+      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true"/>
     </target>
 	
 	<!-- Shows deploying code and running tests only within the org namespace -->
