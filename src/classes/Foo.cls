@@ -8,6 +8,7 @@ public with sharing class Foo {
         List<Opportunity> opportunities = new List<Opportunity>();
         for (Opportunity j : opportunities) {
 		System.debug(j);
+		System.debug(j);
         }
     }
   }
